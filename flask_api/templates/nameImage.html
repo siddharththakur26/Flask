@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="content-section">
+        <form method='POST' action='', enctype="multipart/form-data">
+            {{form.hidden_tag() }}        
+            <fieldset class='form-group'>
+                <div class='form-group'>
+                    <span class="text-success">  {{ name }}</span>
+                </div>                
+            </fieldset>
+        </form>
+    </div>
+{% endblock content %}
